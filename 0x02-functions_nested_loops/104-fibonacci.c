@@ -12,6 +12,7 @@ int main(void)
 	unsigned long sum = 0;
 	long a_head, a_tail, b_head, b_tail, sum_head, sum_tail;
 	printf("1");
+
 	for (counter = 2; counter < 93; counter++) /* will still print */
 	{
 		sum = a + b;
