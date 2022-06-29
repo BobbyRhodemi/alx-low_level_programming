@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* argstostr - concatenating all the arguments of your program
-* @ac: count of arguments
-* @av:array of arguments
-* Return: pointer to the new string
-*/
+ * argstostr - concatenating all the arguments of your program
+ * @ac: count of arguments
+ * @av:array of arguments
+ * Return: pointer to the new string
+ */
 
 char *argstostr(int ac, char **av)
 {
@@ -39,10 +39,10 @@ char *argstostr(int ac, char **av)
 }
 
 /**
-* len - returns length of str
-* @str: string counted
-* Return: returns the length
-*/
+ * len - returns length of str
+ * @str: string counted
+ * Return: returns the length
+ */
 
 int len(char *str)
 {
