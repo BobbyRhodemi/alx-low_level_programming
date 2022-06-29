@@ -1,24 +1,30 @@
 #include "main.h"
 
 /**
- * create_array - creates an array of char and init it
- * with special char
- * @size: Size of the array
- * @c: Character to insert
- * Return: NULL if size is zero or if it fails,
+ * create_array - create array of chars and initialize with a specific char
+ * @size: size of array
+ * @c: fill array values with this char
+ * Return: pointer to array
  */
 
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
-	unsigned int index;
+	int i = 0;
 
-	if (size == 0)
+	if (size <= 0) /* validate size input */
 		return (NULL);
-	arr = malloc(sizeof(char) * size);
-	if (arr == NULL)
+	arr = malloc(sizeof(char) * size); /* allocate memory */
+
+	if (arr == NULL) /* validate memory */
 		return (NULL);
-	for (index = 0; index < size; index++)
-		arr[index] = c;
+
+	while (i < (int)size) /* set array values to char c */
+	{
+		*(arr + i) = c;
+		i++;
+	}
+	*(arr + i) = '\0';
+
 	return (arr);
 }
